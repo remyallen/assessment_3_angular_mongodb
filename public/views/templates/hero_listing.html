@@ -1,0 +1,9 @@
+<select ng-model="selectedPower" ng-repeat="thisPower in superPowers">
+    <option value = "{{thisPower.selectedPower}}">Select Power</option>
+</select>
+
+<h1>View Heros</h1>
+<div ng-repeat="thisHero in superHeros">
+    <h2>{{thisHero.selectedPower}}</h2>
+</div>
+

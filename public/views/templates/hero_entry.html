@@ -1,0 +1,23 @@
+<h1>Enter the Hero's information:</h1>
+<form>
+    <label for="alias">Alias: </label>
+    <input type="text" ng-model="alias" id="alias" />
+
+    <label for="first_name">First Name: </label>
+    <input type="text" ng-model="first_name" id="first_name" />
+
+    <label for="last_name">Last Name: </label>
+    <input type="text" ng-model="last_name" id="last_name" />
+
+    <label for="city">City: </label>
+    <input type="text" ng-model="city" id="city" />
+
+    <label for="primary_power">Primary Power: </label>
+    <input type="text" ng-model="primary_power" id="primary_power" />
+
+    <button ng-click="postData()">Create!</button>
+</form>
+
+<select ng-model="selectedPower" ng-repeat="thisPower in superPowers">
+    <option value = "{{thisPower.selectedPower}}">Select Power</option>
+</select>
